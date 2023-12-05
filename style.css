@@ -1,0 +1,433 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+
+@font-face {
+
+    font-family: lemon;
+    src: url(./assets/fonts/LEMONMILK-Regular.otf);    
+}
+
+
+/* navbar creation starts */
+
+body{
+    background-color: #1B1A17;
+}
+
+.logo{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    left: 75px;
+    color: #FF8303;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.head-x{
+    color: red;
+}
+
+.navbar{
+    height: 57px;
+    width: 100%;
+    background-color: rgba(54, 54, 53,0.7);
+}
+
+.menubar{
+    float: right;
+    list-style-type: none;
+}
+
+.menu{
+    display: inline-block;
+    width: 125px;
+    max-height: 40px;
+    position: relative;
+    text-align: center;
+    margin-right: 25px;
+    top: 10px;
+}
+
+.links{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #e31c58;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.links:hover{
+    background-color: #9d9d97;
+    box-shadow: 0 0 10px green;
+    border-radius: 5px;
+}
+
+
+.drop-dwn1,.drop-dwn2{
+    display: none;
+}
+
+.drop1:hover .drop-dwn1,.drop2:hover .drop-dwn2{
+    display: block;
+}
+
+.drop-item{
+    position: relative;
+    left: 25px;
+    height: 50px;
+    z-index: 1;
+}
+
+/* web 1st section (inro) starts  */
+
+.baks{
+    background-image: url(./assets/images/bg.jpg);
+    /* filter: blur(1px); */
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-div{
+    width: 80%;
+    height: 70vh;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
+}
+
+.sub1,.sub2{
+    width: 45%;
+    height:55vh ;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-left: 35px;
+    float: left;
+    overflow: auto;
+}
+
+.sub1,.sub2{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    box-shadow: 0 0 30px white;
+}
+
+
+.sub2::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#greet{
+    font-family: lemon;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+.headpara{
+    font-size: 0px;
+}
+
+
+.para2{
+    text-align: justify;
+    padding: 10px;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 13px;
+    font-family:monospace ;
+    line-height: 25px;
+}
+
+
+#button1{
+    height: 30px;
+    width: 150px;
+    background: #502903;
+    border: none;
+    color: white;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+#link{
+    text-decoration: none;
+    color: #f20c51;
+    margin-left: 40px;
+}
+
+.img1,.img2{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: white;
+    border-radius: 15px;
+    height: 40vh;
+    width: 40%;
+    float: left;
+    margin-top: 45px;
+    overflow-y: hidden; 
+    margin-left: 35px;  
+    overflow-x: hidden;
+}
+
+.greet-img{
+    padding: 15px;   
+}
+
+.nft-title{
+    font-size: small;
+    color: #e31c58;
+    font-family: lemon;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.nft-head{
+    font-size: medium;
+    color: #e31c58;
+    font-family: lemon;
+    letter-spacing: 1.5px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.greet-img:hover{
+    transform: scale(1.05);
+    filter: contrast(1.5);
+}
+
+
+
+
+/* About Us page */
+
+.about-us{
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #f20c51;
+    font-family: lemon;
+    letter-spacing: 3px;
+}
+
+
+.about-para{
+    width: 65%;
+    border: 1px solid white;
+    height: 260px;
+    float: left;
+    padding: 20px;
+}
+
+.about-img{
+    float: left;
+    padding: 10px;
+    transform: scale(1.2);
+    box-shadow: 0 0 40px green;
+    display: block;
+    position: relative;
+    background-color: white;
+    top: 50px;
+    left: 60px;
+}
+
+#about-p{
+    font-family: monospace;
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+    color: blanchedalmond;
+    letter-spacing: normal;
+}
+
+/* Testimonal */
+
+.customers{
+    height: 300px;
+    width: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+.feedback-head{
+    width: 40%;
+    height: 300px;
+    float: left;
+}
+
+.customer-head{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    text-align: left;
+    margin-top: 120px;
+    margin-left: 80px;
+    color: #f20c51;
+    font-family: lemon;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+
+.feedback{
+    height: 100px;
+    width: 20%;
+    border: 1px solid seagreen;
+    float: left;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #FF8303;
+    font-family: monospace;
+    line-height: 17px;
+    box-shadow: 0 0 50px black;
+    
+}
+
+.c1{
+    z-index: -1;
+    margin-left: 80px;
+}
+
+.c2{
+    position: relative;
+    z-index: 1;
+    top: 55px;
+    right: 80px;
+}
+
+.c3{
+    position: relative;
+    left: 150px;
+    top: 10px;
+}
+
+.c3p{
+    margin-top: 30px;
+}
+
+
+/* Footer section starts */
+
+.footer{
+    height: 250px;
+    width: auto;
+    border: 1px solid white;
+    display: block;
+    margin-top: 30px;
+}
+
+.footer-section1{
+    height: 250px;
+    width: 24%;
+    float: left;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.footer-logo{
+    font-size: 20px;
+    color: #FF8303;
+    margin-left: 80px;
+    margin-top: 60px;
+    font-family: lemon;
+    letter-spacing: 1.5px;
+    display: inline-block;
+}
+
+.social-img{
+    width: auto;
+    height: 20px;
+    filter: saturate(0);
+    margin-left: 10px;
+    position: relative;
+    left: 70px;
+}
+
+.social-img:hover{
+    filter: saturate(1);
+    transform: scale(1.15);
+}
+
+.footer-menu{
+    list-style-type:none ;
+}
+
+.footer-head{
+    position: relative;
+    left: 65px;
+    margin-top: 20px;
+    color: #f20c51;
+    font-family: lemon;
+    font-size: 15px;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+
+
+.footer-links{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: monospace;
+    padding: 5px;
+    text-align: left;
+    margin-left: 80px;
+    letter-spacing: 1px;
+}
+
+.footer-links:hover{
+    color: #FF8303;
+}
+
+.newsletter{
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-family: monospace;
+    font-size: 10px;
+    padding: 20px;
+}
+
+.mail{
+    width: 70%;
+    height: 30px;
+    background-color: #e31c58;
+    margin-left: 40px;
+    border: none;
+    border-radius: 2px;
+    font-family: monospace;
+    text-align: center;    
+}
+
+.submit{
+    margin-left: 40px;
+    padding: 10px;
+    background-color: rgb(249, 90, 33);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 1.5px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+
